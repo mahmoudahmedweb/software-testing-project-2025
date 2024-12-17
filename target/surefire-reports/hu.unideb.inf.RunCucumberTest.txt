@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: hu.unideb.inf.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 90.033 s <<< FAILURE! - in hu.unideb.inf.RunCucumberTest
+Examples.Example #1.1  Time elapsed: 11.66 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.id: logout_sidebar_link (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1.1', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: /var/folders/vl/3x1dcb_d6f5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55321/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc9f790c61ece9322df9a2236deee2a7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at hu.unideb.inf.HomePage.clickButton(HomePage.java:67)
+	at hu.unideb.inf.CommonStepDefs.theButtonIsClicked(CommonStepDefs.java:21)
+	at ✽.the 'Logout' button is clicked(classpath:hu/unideb/inf/logout.feature:12)
+
